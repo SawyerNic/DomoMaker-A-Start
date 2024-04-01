@@ -1,3 +1,5 @@
+// Node imports
+require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const compression = require('compression');
@@ -9,7 +11,6 @@ const helmet = require('helmet');
 const session = require('express-session');
 const RedisStore = require('connect-redis').default;
 const redis = require('redis');
-require('dotenv').config();
 
 const router = require('./router.js');
 
