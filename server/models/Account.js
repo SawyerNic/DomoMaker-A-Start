@@ -73,7 +73,4 @@ AccountSchema.statics.authenticate = async (username, password, callback) => {
 };
 
 AccountModel = mongoose.model('Account', AccountSchema);
-module.exports = {
-  AccountModel,
-  // your other exports...
-};
+module.exports = AccountModel;
